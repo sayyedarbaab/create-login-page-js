@@ -21,6 +21,8 @@
     background: #fff;
     padding: 50px 60px 70px;
     text-align: center;
+    height: 80vh;
+    border-radius: 20px;
 }
 .form-box h1{
     font-size: 30px;
@@ -31,7 +33,7 @@
 .form-box h1::after{
     content: '';
     width: 30px;
-    height: 4px;
+    height: 10px;
     border-radius: 3px;
     background-color: #3c00a0;
     position: absolute;
@@ -46,6 +48,9 @@
     border-radius: 3px;
     display: flex;
     align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
 }
 input{
     width: 100%;
@@ -70,6 +75,7 @@ form p a{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 .btn-field button{
     flex-basis: 48%;
